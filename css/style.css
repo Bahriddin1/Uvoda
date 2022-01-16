@@ -1,0 +1,126 @@
+:root{
+--header-link-color:#090909;
+--headings-color:#343434;
+--normal-text-color:#121212;
+--small-text-color:#060606;
+--main-link-color:#ffffff;
+--main-link-bgc:#060606;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
+      url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+/* HTML  */
+html {
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", "Arial", sans-serif ;
+  font-size: 16px;
+  line-height: 1.75;
+  background-color: #fff;
+  color: #222;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+a:focus{
+  outline: 1px dashed #0A775F;
+  outline-offset: 5px;
+}
+
+.container{
+  width: 100%;
+  max-width: 1480px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* HEADER-HERO WRAPPER*/
+
+.header-hero-wrapper {
+  display: flex;
+  flex-direction: column;
+padding-right: 35px;
+padding-left: 35px;
+}
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 4px;
+  padding-right: 20px;
+  padding-bottom: 4px;
+  padding-left: 26px;
+}
+.site-nav {
+display: flex;
+align-items: center;
+}
+.site-logo {
+  margin-right: 45px;
+width: 110px;
+height: 31px;
+}
+
+
+
+.site-nav-link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+ text-decoration: none;
+  color: var(--header-link-color);
+}
+
+.site-nav-link:not(:last-child){
+  margin-right: 30px;
+}
+
+.site-nav-link:not(:nth-child(4)){
+  margin-right: 47px;
+}
+
+.main-link {
+padding: 14px 24px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 300px;
+background-color: var(--main-link-bgc);
+  color:var(--main-link-color);
+text-decoration: none;
+}
