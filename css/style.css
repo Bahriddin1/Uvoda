@@ -5,6 +5,9 @@
 --small-text-color:#060606;
 --main-link-color:#ffffff;
 --main-link-bgc:#060606;
+--preface-color:#595959;
+--hero-link-bgc:#8979E8;
+--font-style:"Roboto";
 }
 
 @font-face {
@@ -38,7 +41,7 @@ body{
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Poppins", "Arial", sans-serif ;
+  font-family: var(--font-style), "Arial", sans-serif ;
   font-size: 16px;
   line-height: 1.75;
   background-color: #fff;
@@ -62,6 +65,7 @@ a:focus{
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+
 }
 
 
@@ -72,6 +76,7 @@ a:focus{
   flex-direction: column;
 padding-right: 35px;
 padding-left: 35px;
+background-image: url(../img/Group.svg);
 }
 .site-header {
   display: flex;
@@ -95,7 +100,7 @@ height: 31px;
 
 
 .site-nav-link {
-  font-family: "Roboto";
+  font-family: var(--font-style);
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -114,7 +119,7 @@ height: 31px;
 
 .main-link {
 padding: 14px 24px;
-  font-family: "Roboto";
+  font-family: var(--font-style);
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -123,4 +128,122 @@ padding: 14px 24px;
 background-color: var(--main-link-bgc);
   color:var(--main-link-color);
 text-decoration: none;
+}
+
+/* HERO CONTENT */
+
+.site-hero {
+  padding-top: 91px;
+  padding-left: 55px;
+}
+
+.information-sale-wrapper{
+  display: flex;
+  position: relative;
+}
+
+.site-hero-information {
+display: flex;
+flex-direction: column;
+max-width: 481px;
+margin-right: 69px;
+}
+.site-hero-information-preface {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-family: var(--font-style);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+
+
+  letter-spacing: 1.5px;
+  color:var(--preface-color);
+}
+.site-hero-information-heading {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-family: var(--font-style) ;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 54px;
+  line-height: 67px;
+
+  color: var(--headings-color) ;
+  letter-spacing: 1.68px;
+}
+.site-hero-information-text {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 42px;
+  font-family: var(--font-style) ;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 29px;
+color: var(--normal-text-color) ;
+}
+.site-hero-information-links {
+  display: flex;
+  align-items: center;
+}
+.site-hero-information-link {
+  padding-top: 1px;
+  padding-right: 46px;
+  padding-bottom: 0;
+  padding-left: 46px;
+  font-family: var(--font-style) ;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  border: 2px solid var(--hero-link-bgc);
+  border-radius: 300px;
+
+  text-decoration: none;
+  color: var(--hero-link-bgc) ;
+
+}
+
+.site-hero-information-link:hover{
+  color:var(--main-link-color) ;
+  background-color: var(--hero-link-bgc) ;
+}
+
+.site-hero-information-link:not(:last-child){
+  margin-right: 12px;
+}
+
+.sale-img{
+  display: block;
+}
+
+.sale-store{
+width: 240px;
+height: 315px;
+margin-top: 100px;
+margin-right: 134px;
+}
+
+.sale-girl{
+width: 380px;
+height: 340px;
+position: absolute;
+top: -7px;
+left: 726px;
+}
+
+.sale-cart{
+  width: 133px;
+  height: 130px;
+  margin-top: 278px;
+  margin-right: 19px;
+}
+
+.sale-anons{
+  width: 176px;
+  height: 256px;
 }
